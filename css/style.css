@@ -1,16 +1,28 @@
 *{
-    margin: 0;
-    padding: 0;
-  }
-  
-  #comprartickets{
-      color:#25a342
+  margin: 0;
+  padding: 0;
+}
+
+#comprartickets{
+    color:#25a342
+}
+
+  .drk{
+    filter:brightness(50%);
   }
 
-  footer{
-    background-image: linear-gradient(to right,#233B54, #305471);
-  }
+h6, h2, #anotate{
+  text-align: center;
+}
 
-  .down a {
-    color:white !important;
-  }
+.no-padding {
+  padding: 0 !important;
+}
+
+.down a {
+  color:white !important;
+}
+
+footer{
+  background-image: linear-gradient(to right,#233B54, #305471);
+}

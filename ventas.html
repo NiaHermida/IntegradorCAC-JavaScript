@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Comprar Tickets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #373437F5;" >
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/codoacodo.png" alt="codoacodo" width="110"> Conf Bs As
+                      </a>
+                  <div class="justify-content-end">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://niahermida.github.io/TrabajoIntegradorFront/">La Conferencia</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los Oradores</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la Fecha</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Conviértete en Orador</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" id="comprartickets">Comprar Tickets</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <main>
+            <br>
+            <br>
+            <div>
+                <div class="card-group container" style="text-align: center; width: 48rem;">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="card" style="border-color:rgb(107, 107, 216)">
+                        <div class="card-body">
+                          <h4 class="card-title align-content-lg-center">Estudiante</h4>
+                          <h6 class="card-text">Tienen un descuento</h6>
+                        <h5><b>80%</b></h5>
+                        <p class="text-muted">*presentar documentación</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" style="border-color:lightseagreen">
+                          <div class="card-body">
+                            <h4 class="card-title align-content-lg-center">Trainee</h4>
+                            <h6 class="card-text">Tienen un descuento</h6>
+                          <h5><b>50%</b></h5>
+                          <p class="text-muted">*presentar documentación</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card" style="border-color:orange">
+                          <div class="card-body">
+                            <h4 class="card-title align-content-lg-center">Junior</h4>
+                            <h6 class="card-text">Tienen un descuento</h6>
+                          <h5><b>15%</b></h5>
+                          <p class="text-muted">*presentar documentación</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <br>
+                      </div>
+                  
+                      
+                <div style="text-align: center; width: 48rem;" class="container-fluid">
+                  
+                <h6>VENTA</h6>
+                <h1>VALOR DE TICKET $200</h1>
+                <br>
+            </div>
+            <div class="container-fluid" style="width: 48rem;">
+                <form id="myForm">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                      </div>
+                      </div>
+                        <br>
+                        <input type="email" class="form-control" id="correo" placeholder="Correo">
+                      <br>
+                      <div class="row">
+                      <div class="col-md-6">
+                        <label class="form-label">Cantidad</label>
+                        <input type="text" class="form-control" id="cant" placeholder="Cantidad">
+                      </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Categoría</label>
+                        <select id="categoriaTicket" class="form-select">
+                          <option selected value="0">Sin Categoría</option>
+                          <option value="1">Estudiante</option>
+                          <option value="2">Trainee</option>
+                          <option value="3">Junior</option> 
+                        </select>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="alert alert-primary" role="alert" id="totalAPagarBox">
+                        Total a Pagar: $
+                      </div>
+                    <br>
+                    <div class="row">
+                    <div class="col-md-6">
+                    <button type="button" class="btn btn-success btn-lg btn-block w-100" style="background-color:#95D152; border:none" id="btnBorrar" >Borrar</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-success btn-lg btn-block w-100" style="background-color:#95D152; border:none" id="btnResumen" >Resumen</button>
+                    </div>
+                </div>
+                <br>
+                </form>
+            </div>
+                <br>
+        </main>
+        <script src="js/ventas.js"></script>      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+            </body>
+        <footer>
+            <div class="container-fluid">
+              <br>
+            <ul class="nav justify-content-lg-center">
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#"><p style="line-height:2%">Preguntas</p><p>frecuentes</p></a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#">Contáctanos</a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#">Prensa</a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#">Conferencias</a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#"><p style="line-height:2%">Términos y</p><p>condiciones</p></a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#">Privacidad</a>
+              </li>
+              <li class="nav-item down mx-4">
+                <a class="nav-link" href="#">Estudiantes</a>
+              </li>
+            </ul>
+          </div>
+           </footer>
+</html>
